@@ -1,6 +1,5 @@
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
-chmod +x ngrok
 read -p "Dán authtoken vào đây (Sao chép và Ctrl+V sau đó nhấn Enter): " CRP
 ./ngrok authtoken $CRP 
 nohup ./ngrok tcp 5900 &>/dev/null &
